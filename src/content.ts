@@ -17,7 +17,7 @@ export const siteContent = {
   hero: {
     title: ["Seu próximo", "capítulo começa"],
     highlight: "aqui.",
-    subtitle: "Lotes a partir de 337m² em um dos vetores de maior valorização de Guaratinguetá.",
+    subtitle: "Lotes a partir de 337m² em um dos vetores de maior valorização de Guaratinguetá/SP.",
     image: "/images/hero-bg.png",
     ctaPrimary: { label: "Agendar Visita", href: "https://vilasdifiori-capi.vercel.app/" },
     ctaSecondary: { label: "Ver Masterplan", href: "#masterplan" },

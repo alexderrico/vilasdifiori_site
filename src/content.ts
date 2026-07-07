@@ -123,6 +123,7 @@ export const siteContent = {
       { time: "15 min", place: "Aparecida" },
       { time: "5 min", place: "Centro" },
       { time: "90 min", place: "São Paulo" },
+      { time: "60 min", place: "Litoral Norte" },
     ],
   },
 

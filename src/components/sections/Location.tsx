@@ -20,13 +20,6 @@ export default function Location() {
               <p className="mt-3 text-brown-medium/70 leading-relaxed max-w-md text-[14px]">
                 {location.description}
               </p>
-              <div className="mt-4 flex items-start gap-2.5 text-brown-medium/80">
-                <svg className="w-5 h-5 mt-0.5 shrink-0 text-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                </svg>
-                <span className="text-sm leading-relaxed">{location.address}</span>
-              </div>
               <div className="mt-6 space-y-3">
                 {location.distances.map((d, i) => (
                   <ScrollReveal key={i} delay={i * 80} direction="left">
@@ -44,6 +37,19 @@ export default function Location() {
                     </div>
                   </ScrollReveal>
                 ))}
+              </div>
+
+              <div className="mt-6 p-4 bg-amber/10 border border-amber/30 rounded-xl">
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 mt-0.5 shrink-0 text-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-amber">Endereço</span>
+                    <p className="text-sm font-medium text-brown-dark mt-0.5">{location.address}</p>
+                  </div>
+                </div>
               </div>
             </ScrollReveal>
           </div>

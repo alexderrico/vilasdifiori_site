@@ -52,7 +52,7 @@ function MasterplanModal({ onClose }: { onClose: () => void }) {
         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
           <Image
             src={masterplan.image}
-            alt="Masterplan Vilas Di Fiori"
+            alt="Projeto Vilas Di Fiori"
             width={1200}
             height={674}
             priority
@@ -94,7 +94,7 @@ export default function Masterplan() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/30">
               <Image
                 src={masterplan.image}
-                alt="Masterplan Vilas Di Fiori"
+                alt="Projeto Vilas Di Fiori"
                 width={1200}
                 height={674}
                 className="w-full h-auto"

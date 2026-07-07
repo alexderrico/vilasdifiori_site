@@ -77,36 +77,38 @@ function GalleryModal({
       </button>
 
       <div
-        className={`relative w-full max-w-4xl mx-4 aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl transition-all duration-400 ease-out will-change-transform ${
+        className={`relative w-full max-w-4xl mx-4 max-h-[85dvh] rounded-2xl overflow-hidden shadow-2xl transition-all duration-400 ease-out will-change-transform ${
           isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
         onClick={(e) => e.stopPropagation()}
       >
-        {prevImage && (
-          <Image
-            src={prevImage}
-            alt=""
-            fill
-            className="object-cover transition-opacity duration-300"
-            sizes="(max-width: 768px) 100vw, 75vw"
-            aria-hidden
-          />
-        )}
+        <div className="relative w-full h-[50vh] sm:h-[65vh] md:h-[75vh] lg:h-[80vh] max-h-[80dvh]">
+          {prevImage && (
+            <Image
+              src={prevImage}
+              alt=""
+              fill
+              className="object-cover transition-opacity duration-300"
+              sizes="(max-width: 768px) 100vw, 75vw"
+              aria-hidden
+            />
+          )}
 
-        <Image
-          key={current}
-          src={items[current].image}
-          alt={items[current].title}
-          fill
-          priority
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 75vw"
-        />
+          <Image
+            key={current}
+            src={items[current].image}
+            alt={items[current].title}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 75vw"
+          />
+        </div>
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-          <h3 className="text-lg font-bold tracking-wide uppercase">{items[current].title}</h3>
-          <p className="text-sm text-white/60 mt-1">{items[current].description}</p>
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
+          <h3 className="text-sm sm:text-lg font-bold tracking-wide uppercase">{items[current].title}</h3>
+          <p className="text-xs sm:text-sm text-white/60 mt-0.5 sm:mt-1">{items[current].description}</p>
         </div>
       </div>
 

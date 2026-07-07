@@ -20,7 +20,7 @@ export const siteContent = {
     subtitle: "Lotes a partir de 337m² em um dos vetores de maior valorização de Guaratinguetá/SP.",
     image: "/images/hero-bg.png",
     ctaPrimary: { label: "Agendar Visita", href: "https://vilasdifiori-capi.vercel.app/" },
-    ctaSecondary: { label: "Ver Masterplan", href: "#masterplan" },
+    ctaSecondary: { label: "Ver Projeto", href: "#masterplan" },
     stats: [
       { value: "248", label: "LOTES EXCLUSIVOS", icon: "lotus" as const },
       { value: "35.000m²", label: "DE ÁREA VERDE", icon: "leaf" as const },
@@ -56,11 +56,11 @@ export const siteContent = {
   },
 
   masterplan: {
-    label: "Masterplan",
+    label: "Projeto",
     title: "Seu futuro anotado em cada detalhe.",
     description:
-      "Explore o masterplan interativo e descubra a localização de cada área de lazer e conveniência.",
-    cta: { label: "Explorar Masterplan", href: "#masterplan" },
+      "Explore o projeto interativo e descubra a localização de cada área de lazer e conveniência.",
+    cta: { label: "Explorar Projeto", href: "#masterplan" },
     image: "/images/masterplan_v2.png",
     legend: [
       { num: 1, label: "Portaria 24h" },
@@ -116,6 +116,7 @@ export const siteContent = {
     label: "Localização Privilegiada",
     title: "No coração do que mais valoriza.",
     description: "Fácil acesso às principais vias e tudo o que você precisa por perto.",
+    address: "R. Oswaldo de Lima Mesquita, 795 - Santa Edwiges",
     image: "/images/mapa_v2.png",
     distances: [
       { time: "10 min", place: "Buriti Shopping" },

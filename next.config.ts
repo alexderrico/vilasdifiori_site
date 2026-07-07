@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
     localPatterns: [
       {
         pathname: "/images/**",
-        search: "",
       },
     ],
+    qualities: [75, 85, 100],
   },
 };
 

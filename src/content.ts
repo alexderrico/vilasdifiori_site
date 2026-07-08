@@ -61,7 +61,7 @@ export const siteContent = {
     description:
       "Explore o projeto interativo e descubra a localização de cada área de lazer e conveniência.",
     cta: { label: "Explorar Projeto", href: "#masterplan" },
-    image: "/images/masterplan_v2.png",
+    image: "/images/masterplan_v3.png",
     legend: [
       { num: 1, label: "Portaria 24h" },
       { num: 2, label: "Clube" },

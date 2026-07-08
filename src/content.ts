@@ -65,7 +65,7 @@ export const siteContent = {
     legend: [
       { num: 1, label: "Portaria 24h" },
       { num: 2, label: "Clube" },
-      { num: 3, label: "Piscinas" },
+      { num: 3, label: "Academia" },
       { num: 4, label: "Quadras" },
       { num: 5, label: "Área Verde" },
       { num: 6, label: "Praça Verde" },
@@ -80,7 +80,7 @@ export const siteContent = {
       "Um verdadeiro clube com mais de 20 opções de lazer para você aproveitar todos os dias.",
     cta: { label: "Ver Galeria Completa", href: "#galeria" },
     items: [
-      { title: "Piscina", description: "Climatizada e integrada ao clube", image: "/images/galeria/piscina_v1.jpg" },
+      { title: "Salão de Eventos", description: "Espaço versátil para confraternizações e eventos especiais", image: "/images/galeria/piscina_v1.jpg" },
       { title: "Academia", description: "Equipamentos de última geração", image: "/images/galeria/academia.jpg" },
       { title: "Complexo de Lazer", description: "Estrutura completa para toda a família", image: "/images/galeria/complexo_de_lazer.jpg" },
       { title: "Quadras", description: "Diversas modalidades à sua disposição", image: "/images/galeria/quadras_v1.jpg" },
@@ -95,7 +95,7 @@ export const siteContent = {
   architect: {
     label: "O Conceito",
     quote:
-      "O conceito era muito diferenciado, pensado para a população de Guaratinguetá. Todo o projeto foi pensado pra atender essa necessidade de convivência entre pessoas, onde o morador deixa de ficar somente na sua residência, e passa a conviver com segurança no seu próprio condomínio. Tendo infraestrutura de esporte, infraestrutura cultural, interagindo com o meio ambiente, e principalmente com o pôr do sol, que é simplesmente fantástico. Naquela região, simplesmente extraordinário a visão que a gente tem lá no loteamento do pôr do sol.A",
+      "O conceito do empreendimento foi cuidadosamente desenvolvido para atender às expectativas e ao estilo de vida da população de Guaratinguetá. Todo o projeto foi pensado para promover a convivência entre as pessoas, proporcionando um ambiente onde o morador deixa de viver apenas dentro de sua residência e passa a desfrutar, com segurança, de todos os espaços do seu próprio condomínio.\n\nCom uma infraestrutura completa voltada ao esporte, à cultura e ao contato com a natureza, o empreendimento incentiva a integração entre os moradores e oferece uma experiência de vida mais equilibrada e acolhedora.\n\nOutro grande diferencial é a privilegiada localização, que proporciona um dos mais belos pores do sol da região. A vista do loteamento é simplesmente extraordinária, transformando o entardecer em um espetáculo diário para quem vive ali.",
     name: "Ricardo Rabello",
     role: "Arquiteto Projetista das Áreas de Lazer do Vilas Di Fiori",
     image: "/images/arquiteto.jpg",
@@ -106,7 +106,7 @@ export const siteContent = {
     title: "Guaratinguetá cresce. Seu patrimônio também.",
     items: [
       { title: "Valorização", description: "Região em constante crescimento", icon: "trending-up" as const },
-      { title: "Liquidez", description: "Alta demanda e rápida revenda", icon: "dollar" as const },
+      { title: "Liquidez", description: "Boa expectativa de mercado", icon: "dollar" as const },
       { title: "Infraestrutura Pronta", description: "Menos risco, mais segurança", icon: "shield" as const },
       { title: "Condições Facilitadas", description: "Parcelamento direto com a incorporadora", icon: "document" as const },
     ],
@@ -120,9 +120,9 @@ export const siteContent = {
     image: "/images/mapa_v2.png",
     distances: [
       { time: "10 min", place: "Buriti Shopping" },
-      { time: "15 min", place: "Aparecida" },
-      { time: "5 min", place: "Centro" },
-      { time: "90 min", place: "São Paulo" },
+      { time: "20 min", place: "Aparecida" },
+      { time: "8 min", place: "Centro" },
+      { time: "120 min", place: "São Paulo" },
       { time: "60 min", place: "Litoral Norte" },
     ],
   },

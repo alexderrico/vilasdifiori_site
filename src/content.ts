@@ -106,7 +106,7 @@ export const siteContent = {
     title: "Guaratinguetá cresce. Seu patrimônio também.",
     items: [
       { title: "Valorização", description: "Região em constante crescimento", icon: "trending-up" as const },
-      { title: "Liquidez", description: "Boa expectativa de mercado", icon: "dollar" as const },
+      { title: "Liquidez", description: "Potencial de liquidez e facilidade de comercialização", icon: "dollar" as const },
       { title: "Infraestrutura Pronta", description: "Menos risco, mais segurança", icon: "shield" as const },
       { title: "Condições Facilitadas", description: "Parcelamento direto com a incorporadora", icon: "document" as const },
     ],

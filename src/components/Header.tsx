@@ -31,9 +31,9 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="Vilas Di Fiori Residence Club"
-              width={2000}
-              height={700}
-              className="h-48 w-auto"
+              width={360}
+              height={126}
+              className="h-24 sm:h-36 lg:h-48 w-auto"
               priority
             />
           </a>
@@ -54,7 +54,7 @@ export default function Header() {
             href={whatsapp.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-2.5 bg-whatsapp hover:bg-whatsapp-dark text-white px-5 py-2.5 rounded-full text-base font-semibold tracking-wide transition-all duration-300 shadow-lg shadow-whatsapp/25 hover:shadow-xl hover:shadow-whatsapp/30 hover:scale-105 active:scale-95"
+            className="hidden sm:inline-flex items-center gap-2.5 bg-whatsapp hover:bg-whatsapp-dark text-white px-4 lg:px-5 py-2 lg:py-2.5 rounded-full text-sm lg:text-base font-semibold tracking-wide transition-all duration-300 shadow-lg shadow-whatsapp/25 hover:shadow-xl hover:shadow-whatsapp/30 hover:scale-105 active:scale-95"
           >
             <WhatsAppIcon className="w-5 h-5" />
             {whatsapp.ctaText}
@@ -64,6 +64,7 @@ export default function Header() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden text-white p-2 rounded-full hover:bg-white/10 transition-colors"
             aria-label="Menu"
+            aria-expanded={mobileOpen}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileOpen ? (

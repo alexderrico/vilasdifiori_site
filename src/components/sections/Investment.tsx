@@ -45,7 +45,7 @@ export default function Investment() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {investment.items.map((item, i) => (
               <ScrollReveal key={i} delay={i * 100} direction="up">
-                <div className="bg-white rounded-2xl p-6 text-center group cursor-default shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] h-full flex flex-col items-center justify-center min-h-[200px]">
+                <div className="bg-white rounded-2xl p-4 sm:p-6 text-center group cursor-default shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] h-full flex flex-col items-center justify-center min-h-[140px] sm:min-h-[200px]">
                   <div className="text-amber flex justify-center transition-transform duration-300 group-hover:scale-110">
                     {investmentIcons[item.icon]}
                   </div>

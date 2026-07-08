@@ -21,9 +21,9 @@ export default function Footer() {
             <Image
               src="/images/logo.png"
               alt="Vilas Di Fiori Residence Club"
-              width={2800}
-              height={900}
-              className="h-36 w-auto"
+              width={360}
+              height={126}
+              className="h-20 sm:h-28 md:h-36 w-auto"
             />
           </a>
 
@@ -44,7 +44,7 @@ export default function Footer() {
               <a
                 key={social.label}
                 href={social.url}
-                className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/40 hover:text-white transition-all duration-300 hover:scale-110"
+                className="w-11 h-11 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/40 hover:text-white transition-all duration-300 hover:scale-110"
                 aria-label={social.label}
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

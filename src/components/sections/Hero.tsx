@@ -75,18 +75,18 @@ export default function Hero() {
             </ScrollReveal>
           </div>
 
-          <div className="hidden lg:block">
+          <div className="lg:block">
             <ScrollReveal direction="right" delay={400}>
-              <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[2rem] p-8 max-w-md ml-auto shadow-2xl shadow-black/30">
-                <div className="space-y-5">
+              <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[2rem] p-6 sm:p-8 max-w-md ml-auto shadow-2xl shadow-black/30">
+                <div className="grid grid-cols-2 gap-4 sm:space-y-0 sm:flex sm:flex-col sm:gap-5">
                   {hero.stats.map((stat) => (
-                    <div key={stat.label} className="flex items-center gap-4 text-white">
-                      <div className="w-14 h-14 rounded-2xl bg-amber/20 border border-amber/30 flex items-center justify-center text-amber shrink-0">
+                    <div key={stat.label} className="flex items-center gap-3 sm:gap-4 text-white">
+                      <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-amber/20 border border-amber/30 flex items-center justify-center text-amber shrink-0">
                         <StatIcon icon={stat.icon} />
                       </div>
                       <div>
-                        <div className="text-xl font-bold tracking-tight">{stat.value}</div>
-                        <div className="text-xs tracking-wider text-white/70">{stat.label}</div>
+                        <div className="text-sm sm:text-xl font-bold tracking-tight">{stat.value}</div>
+                        <div className="text-[10px] sm:text-xs tracking-wider text-white/70">{stat.label}</div>
                       </div>
                     </div>
                   ))}

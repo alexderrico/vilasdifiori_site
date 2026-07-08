@@ -12,7 +12,7 @@ export function useScrollReveal({
   rootMargin = "0px 0px -60px 0px",
 }: UseScrollRevealOptions = {}) {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [scrollDirection, setScrollDirection] = useState<"down" | "up">("down");
   const lastScrollY = useRef(0);
 

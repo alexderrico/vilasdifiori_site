@@ -28,13 +28,7 @@ export default function ArchitectSection() {
               <SectionLabel light className="text-lg lg:text-xl">{architect.label}</SectionLabel>
               <blockquote className="mt-5 space-y-4">
                 <span className="text-4xl lg:text-5xl text-amber/30 leading-none block -mb-4">"</span>
-                {architect.quote.split(". ").reduce((acc: string[], sentence, i, arr) => {
-                  if (i % 2 === 0) {
-                    const next = arr[i + 1];
-                    acc.push(next ? `${sentence}. ${next}.` : `${sentence}.`);
-                  }
-                  return acc;
-                }, []).map((paragraph, i) => (
+                {architect.quote.split("\n\n").map((paragraph, i) => (
                   <p key={i} className="text-white/80 text-base lg:text-lg leading-relaxed">
                     {paragraph}
                   </p>
